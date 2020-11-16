@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         fontSize: 18,
-        color: colors.orange,
+        color: colors.background,
         fontWeight: 'bold'
     },
     input: {

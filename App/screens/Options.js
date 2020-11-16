@@ -16,7 +16,6 @@ const Options = () => {
                         <Entypo name="chevron-right" size={20} color={colors.blue} />
                     }
                 />
-                <View style={styles.separator} />
 
                 <RowItem
                     title="Theme"
@@ -25,7 +24,6 @@ const Options = () => {
                         <Entypo name="chevron-right" size={20} color={colors.blue} />
                     }
                 />
-                <View style={styles.separator} />
 
                 <RowItem
                     title="Theme"
@@ -34,20 +32,10 @@ const Options = () => {
                         <Entypo name="chevron-right" size={20} color={colors.blue} />
                     }
                 />
-                <View style={styles.separator} />
 
 
             </ScrollView>
         </SafeAreaView>
     );
 };
-
-const styles = StyleSheet.create({
-    separator: {
-        backgroundColor: colors.border,
-        height: StyleSheet.hairlineWidth,
-        marginLeft: 20,
-    }
-})
-
 export default Options;

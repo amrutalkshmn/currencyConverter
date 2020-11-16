@@ -1,13 +1,16 @@
 import React from 'react';
-import { Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, StyleSheet, TouchableOpacity, View } from 'react-native';
 import colors from '../constants/colors';
 
 const RowItem = ({ title, onPress, rightIcon }) => {
     return (
-        <TouchableOpacity onPress={onPress} style={styles.row}>
-            <Text style={styles.title}>{title}</Text>
-            {rightIcon}
-        </TouchableOpacity>
+        <View>
+            <TouchableOpacity onPress={onPress} style={styles.row}>
+                <Text style={styles.title}>{title}</Text>
+                {rightIcon}
+            </TouchableOpacity>
+            <View style={styles.separator} />
+        </View>
     )
 };
 
@@ -27,7 +30,7 @@ const styles = StyleSheet.create({
     separator: {
         backgroundColor: colors.border,
         height: StyleSheet.hairlineWidth,
-        marginLeft: 20,
+
     },
 });
 
